@@ -18,7 +18,7 @@ const Pricing = () => {
     {
       title: "Residential",
       description: "Perfect for homes and residential projects",
-      basePrice: "$150",
+      basePrice: "₹150",
       unit: "per sq ft",
       features: [
         "Custom home design",
@@ -33,7 +33,7 @@ const Pricing = () => {
     {
       title: "Commercial",
       description: "Ideal for business and commercial buildings",
-      basePrice: "$200",
+      basePrice: "₹200",
       unit: "per sq ft",
       features: [
         "Commercial-grade materials",
@@ -48,7 +48,7 @@ const Pricing = () => {
     {
       title: "Interiors",
       description: "Complete interior design and finishing",
-      basePrice: "$100",
+      basePrice: "₹100",
       unit: "per sq ft",
       features: [
         "Interior design consultation",
@@ -99,7 +99,7 @@ const Pricing = () => {
               Construction Pricing
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Transparent pricing for all your construction needs. Get an instant estimate 
+              Transparent pricing for all your construction needs. Get an instant estimate
               and choose the package that fits your project requirements.
             </p>
           </div>
@@ -125,7 +125,7 @@ const Pricing = () => {
                       Most Popular
                     </div>
                   )}
-                  
+
                   <CardHeader className={tier.popular ? 'pt-12' : ''}>
                     <CardTitle className="text-2xl text-center">{tier.title}</CardTitle>
                     <CardDescription className="text-center">{tier.description}</CardDescription>

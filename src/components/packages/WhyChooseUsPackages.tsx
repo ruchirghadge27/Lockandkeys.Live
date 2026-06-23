@@ -7,6 +7,7 @@ import {
   CheckCircle,
   Smartphone,
   Home,
+  BadgeCheck,
 } from "lucide-react";
 
 export const WhyChooseUsPackages = () => {
@@ -24,7 +25,7 @@ export const WhyChooseUsPackages = () => {
     {
       icon: TrendingUp,
       title: "Daily Progress Updates",
-      description: "Real-time updates via app and weekly reports",
+      description: "Real-time updates via weekly reports",
     },
     {
       icon: Shield,
@@ -37,9 +38,9 @@ export const WhyChooseUsPackages = () => {
       description: "Only ISI/ISO certified materials from trusted brands",
     },
     {
-      icon: Smartphone,
-      title: "Site Tracking App",
-      description: "Monitor your construction progress 24/7",
+      icon: BadgeCheck,
+      title: "100% Transparent Pricing",
+      description: "No hidden costs or surprise charges",
     },
     {
       icon: Clock,

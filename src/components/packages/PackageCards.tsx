@@ -89,7 +89,7 @@ const packages: PackageData[] = [
   {
     id: "standard",
     name: "Standard",
-    priceRange: "₹1,700 - ₹2,000",
+    priceRange: "₹1,500",
     tagline: "Best Value for Money",
     overview: "",
     inclusions: [
@@ -120,7 +120,7 @@ const packages: PackageData[] = [
   {
     id: "premium",
     name: "Premium",
-    priceRange: "₹2,000 - ₹2,400",
+    priceRange: "₹2,000",
     tagline: "Superior Quality & Aesthetics",
     overview: "",
     inclusions: [
@@ -157,7 +157,7 @@ const packages: PackageData[] = [
   {
     id: "luxury",
     name: "Luxury",
-    priceRange: "₹2,400+",
+    priceRange: "₹2,600+",
     tagline: "Ultimate Premium Experience",
     overview: "",
     inclusions: [
@@ -234,8 +234,8 @@ export const PackageCards = () => {
                   key={pkg.id}
                   onClick={() => setActiveTab(pkg.id)}
                   className={`flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-semibold border-2 transition-all duration-200 ${activeTab === pkg.id
-                      ? `${meta.accentColor} bg-primary text-primary-foreground shadow-md scale-105`
-                      : "border-border text-muted-foreground hover:border-primary hover:text-primary bg-background"
+                    ? `${meta.accentColor} bg-primary text-primary-foreground shadow-md scale-105`
+                    : "border-border text-muted-foreground hover:border-primary hover:text-primary bg-background"
                     }`}
                 >
                   <Icon className="h-4 w-4" />
