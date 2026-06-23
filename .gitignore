@@ -1,0 +1,67 @@
+# =========================
+# 📦 Dependency folders
+# =========================
+node_modules/
+.pnpm/
+
+# =========================
+# 🏗️ Build outputs
+# =========================
+dist/
+dist-ssr/
+build/
+
+# =========================
+# ⚙️ Vite, cache & env
+# =========================
+.vite/
+.cache/
+*.local
+.env*
+!.env.example
+
+# =========================
+# 🔥 Logs
+# =========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =========================
+# 🧠 IDEs and editors
+# =========================
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# =========================
+# 🖥️ OS-specific
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# 🚫 Misc large or temp files
+# =========================
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+*.tmp
+*.bak
+*.swp
+
+# =========================
+# 💥 GitHub Pages (gh-pages)
+# =========================
+gh-pages/
