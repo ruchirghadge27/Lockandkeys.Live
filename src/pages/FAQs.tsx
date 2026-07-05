@@ -12,7 +12,7 @@ const FAQs = () => {
   const faqs = [
     {
       question: "How long does a typical construction project take?",
-      answer: "Project timelines vary based on scope and complexity. Residential homes typically take 4-8 months, while commercial projects can range from 6-18 months. We provide detailed timelines during the planning phase and keep you updated throughout the process."
+      answer: "Project timelines vary based on scope and complexity. Residential homes typically take 9 - 12 months, while commercial projects can range from 6-18 months. We provide detailed timelines during the planning phase and keep you updated throughout the process."
     },
     {
       question: "Do you provide free estimates?",
@@ -20,7 +20,7 @@ const FAQs = () => {
     },
     {
       question: "Are you licensed and insured?",
-      answer: "Absolutely. LocknKey Construction is fully licensed, bonded, and insured. We carry comprehensive liability insurance and workers' compensation to protect both our team and your property during construction."
+      answer: "Absolutely. LockandKey Construction is fully licensed, bonded, and insured. We carry comprehensive liability insurance and workers' compensation to protect both our team and your property during construction."
     },
     {
       question: "What types of construction projects do you handle?",
@@ -36,7 +36,7 @@ const FAQs = () => {
     },
     {
       question: "What payment methods do you accept?",
-      answer: "We accept various payment methods including checks, bank transfers, and credit cards. Payment is typically structured in phases based on project milestones, with a small initial deposit to begin work."
+      answer: "We accept various payment methods including checks, bank transfers, and other methods. Payment is typically structured in phases based on project milestones, with a small initial deposit to begin work."
     },
     {
       question: "Do you handle permits and approvals?",
@@ -70,8 +70,8 @@ const FAQs = () => {
               Frequently Asked Questions
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Find answers to common questions about our construction services, 
-              processes, and what you can expect when working with LocknKey.
+              Find answers to common questions about our construction services,
+              processes, and what you can expect when working with LockandKey.
             </p>
           </div>
         </section>
@@ -81,8 +81,8 @@ const FAQs = () => {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <Accordion type="single" collapsible className="space-y-4">
               {faqs.map((faq, index) => (
-                <AccordionItem 
-                  key={index} 
+                <AccordionItem
+                  key={index}
                   value={`item-${index}`}
                   className="border border-border rounded-lg px-6 data-[state=open]:bg-construction-blue-light/50"
                 >

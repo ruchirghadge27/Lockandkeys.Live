@@ -1,9 +1,4 @@
 import Layout from "@/components/Layout";
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
 import {
   Card,
   CardContent,
@@ -11,72 +6,22 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
 
 const ContactUs = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-  const { toast } = useToast();
-
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    // Basic validation
-    if (
-      !formData.name ||
-      !formData.email ||
-      !formData.phone ||
-      !formData.message
-    ) {
-      toast({
-        title: "Please fill in all fields",
-        description: "All fields are required to submit your message.",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    // Simulate form submission
-    toast({
-      title: "Message sent successfully!",
-      description: "We'll get back to you within 24 hours.",
-    });
-
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-    });
-  };
 
   const contactInfo = [
     {
       icon: Phone,
       title: "Call Us",
-      details: "(123) 456-7890",
+      details: "+91 9156679165",
       description: "Mon-Fri: 8AM-6PM",
     },
     {
       icon: Mail,
       title: "Email Us",
-      details: "info@locknkey.com",
+      details: "tirupateebalajispaces@gmail.com",
       description: "We'll respond within 24 hours",
     },
     {
@@ -88,8 +33,8 @@ const ContactUs = () => {
     {
       icon: Clock,
       title: "Working Hours",
-      details: "Monday - Friday: 8AM - 6PM",
-      description: "Saturday: 9AM - 4PM",
+      details: "Monday - Friday: 9AM - 7PM",
+      description: "Saturday: 9AM - 7PM",
     },
   ];
 
@@ -100,7 +45,7 @@ const ContactUs = () => {
         <section className="py-16 bg-construction-blue-light">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Contact LocknKey
+              Contact LockandKey
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Ready to start your construction project? Get in touch with our
@@ -122,65 +67,19 @@ const ContactUs = () => {
                     possible.
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="name">Full Name *</Label>
-                        <Input
-                          id="name"
-                          name="name"
-                          type="text"
-                          placeholder="Enter your full name"
-                          value={formData.name}
-                          onChange={handleInputChange}
-                          required
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="phone">Phone Number *</Label>
-                        <Input
-                          id="phone"
-                          name="phone"
-                          type="tel"
-                          placeholder="(123) 456-7890"
-                          value={formData.phone}
-                          onChange={handleInputChange}
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email Address *</Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        placeholder="your.email@example.com"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                      />
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="message">Project Details *</Label>
-                      <Textarea
-                        id="message"
-                        name="message"
-                        placeholder="Tell us about your construction project..."
-                        className="min-h-[120px]"
-                        value={formData.message}
-                        onChange={handleInputChange}
-                        required
-                      />
-                    </div>
-
-                    <Button type="submit" className="w-full" size="lg">
-                      Send Message
-                    </Button>
-                  </form>
+                <CardContent className="flex justify-center p-4">
+                  <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSelp3nTIbnvOymudtyZVk7Lt7arqhuk4oDy8HWFibRJTJUB_A/viewform?embedded=true"
+                    width="640"
+                    height="957"
+                    frameBorder={0}
+                    marginHeight={0}
+                    marginWidth={0}
+                    title="Contact Us Form"
+                    style={{ maxWidth: "100%" }}
+                  >
+                    Loading…
+                  </iframe>
                 </CardContent>
               </Card>
 
@@ -234,7 +133,7 @@ const ContactUs = () => {
                         allowFullScreen
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
-                        title="LocknKey Office Location"
+                        title="LockandKey Office Location"
                       />
                     </div>
                   </CardContent>
@@ -271,7 +170,7 @@ const ContactUs = () => {
                 className="bg-transparent border-white text-white hover:bg-white hover:text-primary"
               >
                 <a
-                  href="mailto:info@locknkey.com"
+                  href="mailto:tirupateebalajispaces@gmail.com"
                   className="flex items-center space-x-2"
                 >
                   <Mail className="h-5 w-5" />

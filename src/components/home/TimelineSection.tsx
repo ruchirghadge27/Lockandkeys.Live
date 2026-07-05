@@ -4,6 +4,7 @@ import {
   PenTool,
   Hammer,
   Handshake,
+  FileText,
 } from "lucide-react";
 
 const timelineSteps = [
@@ -29,17 +30,25 @@ const timelineSteps = [
     step: "03",
   },
   {
+    icon: FileText,
+    title: "Estimate & Contract",
+    description:
+      "Receive a detailed project estimate, transparent pricing, and a clear contract before work begins",
+    step: "04",
+  },
+  {
     icon: Hammer,
     title: "Construction",
     description:
       "Professional construction with regular updates and quality checks",
-    step: "04",
+    step: "05",
   },
   {
     icon: Handshake,
     title: "Handover",
-    description: "Final inspection, documentation, and keys handover to you",
-    step: "05",
+    description:
+      "Final inspection, documentation, and keys handover to you",
+    step: "06",
   },
 ];
 

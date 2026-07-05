@@ -59,10 +59,10 @@
 //           <div>
 //             <span className="inline-block text-primary font-semibold text-sm uppercase tracking-widest mb-3">Who We Are</span>
 //             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 leading-tight">
-//               Building Excellence<br />Since 2012
+//               Building Excellence<br />Since 2014
 //             </h2>
 //             <p className="text-base md:text-lg text-muted-foreground mb-5 leading-relaxed">
-//               At LocknKey, we transform visions into lasting structures. With over a decade of experience in the construction industry, we've built our reputation on delivering exceptional quality, innovative solutions, and unmatched customer service.
+//               At LockandKey, we transform visions into lasting structures. With over a decade of experience in the construction industry, we've built our reputation on delivering exceptional quality, innovative solutions, and unmatched customer service.
 //             </p>
 //             <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed">
 //               From residential homes to commercial complexes, our team of skilled professionals brings expertise, dedication, and attention to detail to every project we undertake.
@@ -191,11 +191,11 @@ const AboutSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 leading-tight">
               Building Excellence
               <br />
-              Since 2012
+              Since 2014
             </h2>
 
             <p className="text-base md:text-lg text-muted-foreground mb-5 leading-relaxed">
-              At LocknKey, we transform visions into lasting structures. With
+              At LockandKey, we transform visions into lasting structures. With
               over a decade of experience in the construction industry, we've
               built our reputation on delivering exceptional quality, innovative
               solutions, and unmatched customer service.

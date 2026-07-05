@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Home, Building, Palette, RefreshCw, ArrowRight } from 'lucide-react';
+import { Home, Building, Palette, RefreshCw, ArrowRight, Factory } from 'lucide-react';
 
 const services = [
   {
@@ -22,6 +22,15 @@ const services = [
     iconBg: "bg-blue-500/10",
   },
   {
+    icon: Factory,
+    title: "Industrial Projects",
+    description: "Specialized industrial construction for factories, manufacturing units, warehouses, and production facilities.",
+    features: ["Factories", "Manufacturing Units", "Industrial Warehouses"],
+    color: "from-orange-500/10 to-amber-500/10",
+    iconColor: "text-orange-600",
+    iconBg: "bg-orange-500/10",
+  },
+  {
     icon: Palette,
     title: "Interior Fit-Out",
     description: "Complete interior solutions from design to execution for modern living spaces.",
@@ -30,15 +39,7 @@ const services = [
     iconColor: "text-purple-600",
     iconBg: "bg-purple-500/10",
   },
-  {
-    icon: RefreshCw,
-    title: "Renovation Services",
-    description: "Transform existing spaces with our comprehensive renovation and remodeling services.",
-    features: ["Kitchen Remodeling", "Bathroom Renovation", "Complete Overhauls"],
-    color: "from-green-500/10 to-teal-500/10",
-    iconColor: "text-green-600",
-    iconBg: "bg-green-500/10",
-  },
+
 ];
 
 const ServicesSection = () => {

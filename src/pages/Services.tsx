@@ -46,15 +46,15 @@ const Services = () => {
       ],
     },
     {
-      icon: Wrench,
-      title: "General Contracting",
+      icon: Factory,
+      title: "Industrial Construction",
       description:
-        "Complete project management from planning to completion with skilled oversight.",
+        "Construction of factories, industrial plants, warehouses, and large-scale infrastructure projects.",
       features: [
-        "Project Management",
-        "Site Supervision",
-        "Quality Control",
-        "Timeline Management",
+        "Factory Buildings",
+        "Industrial Warehouses",
+        "Manufacturing Units",
+        "Heavy Structure Construction",
       ],
     },
     {
@@ -82,17 +82,18 @@ const Services = () => {
     //   features: ["Pipe Installation", "Fixture Installation", "Drain Cleaning", "Emergency Repairs"]
     // }
     {
-      icon: Factory,
-      title: "Industrial Construction",
+      icon: Wrench,
+      title: "General Contracting",
       description:
-        "Construction of factories, industrial plants, warehouses, and large-scale infrastructure projects.",
+        "Complete project management from planning to completion with skilled oversight.",
       features: [
-        "Factory Buildings",
-        "Industrial Warehouses",
-        "Manufacturing Units",
-        "Heavy Structure Construction",
+        "Project Management",
+        "Site Supervision",
+        "Quality Control",
+        "Timeline Management",
       ],
     },
+
     {
       icon: Compass,
       title: "Vastu Consultation",

@@ -55,6 +55,12 @@ const WhyUs = () => {
 
   const benefits = [
     {
+      icon: Star,
+      title: "Expert Team Under One Roof",
+      description:
+        "Our in-house architects and civil engineers work together to deliver well-planned, structurally sound, and high-quality construction solutions.",
+    },
+    {
       icon: Award,
       title: "Quality Assurance",
       description:
@@ -66,12 +72,6 @@ const WhyUs = () => {
     //   description:
     //     "All our projects meet or exceed local building codes and safety regulations.",
     // },
-    {
-      icon: Star,
-      title: "Customer Satisfaction",
-      description:
-        "Our 150+ happy clients are a testament to our commitment to excellence.",
-    },
     {
       icon: Zap,
       title: "Modern Technology",
@@ -91,7 +91,7 @@ const WhyUs = () => {
       name: "Priya Sharma",
       project: "Custom Family Home",
       rating: 5,
-      text: "LocknKey transformed our vision into reality. The quality of work and attention to detail exceeded our expectations.",
+      text: "LockandKey transformed our vision into reality. The quality of work and attention to detail exceeded our expectations.",
     },
     {
       name: "Rahul Mehta",
@@ -114,7 +114,7 @@ const WhyUs = () => {
         <section className="py-16 bg-construction-blue-light">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Why Choose LocknKey?
+              Why Choose LockandKey?
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               With over 12 years of excellence in construction, we've built our
@@ -167,7 +167,7 @@ const WhyUs = () => {
                 What Sets Us Apart
               </h2>
               <p className="text-lg text-muted-foreground">
-                Experience the LocknKey difference in every aspect of your
+                Experience the LockandKey difference in every aspect of your
                 project.
               </p>
             </div>
@@ -243,7 +243,7 @@ const WhyUs = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                The LocknKey Advantage
+                The LockandKey Advantage
               </h2>
               <p className="text-xl opacity-90 max-w-3xl mx-auto">
                 From initial consultation to final handover, we ensure every

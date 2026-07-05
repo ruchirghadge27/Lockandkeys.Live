@@ -145,7 +145,7 @@ const Pricing = () => {
                       ))}
                     </ul>
                     <Button asChild className="w-full" variant={tier.popular ? "default" : "outline"}>
-                      <Link to="/contact-us">Get Quote</Link>
+                      <Link to="/contact-us">Get Free Quote</Link>
                     </Button>
                   </CardContent>
                 </Card>

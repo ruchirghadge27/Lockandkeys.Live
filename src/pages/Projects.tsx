@@ -52,9 +52,8 @@ const ImageSlideshow = ({ images, title }) => {
           key={idx}
           src={img}
           alt={`${title} — image ${idx + 1}`}
-          className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-500 ${
-            idx === current ? "opacity-100" : "opacity-0"
-          }`}
+          className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-500 ${idx === current ? "opacity-100" : "opacity-0"
+            }`}
         />
       ))}
 
@@ -83,9 +82,8 @@ const ImageSlideshow = ({ images, title }) => {
                   e.stopPropagation();
                   setCurrent(idx);
                 }}
-                className={`w-1.5 h-1.5 rounded-full transition-all duration-200 ${
-                  idx === current ? "bg-white scale-125" : "bg-white/50"
-                }`}
+                className={`w-1.5 h-1.5 rounded-full transition-all duration-200 ${idx === current ? "bg-white scale-125" : "bg-white/50"
+                  }`}
               />
             ))}
           </div>
@@ -215,7 +213,7 @@ const Projects = () => {
         </section>
 
         {/* Filters */}
-        <section className="py-8 bg-background">
+        {/* <section className="py-8 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-wrap justify-center gap-4">
               {categories.map((category) => (
@@ -230,7 +228,7 @@ const Projects = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Grid */}
         <section className="pb-16 bg-background">

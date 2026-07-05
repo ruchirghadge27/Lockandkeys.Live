@@ -20,7 +20,7 @@ export const CTASection = () => {
           <Button asChild size="lg" className="w-full">
             <Link to="/contact-us">
               <MessageCircle className="mr-2 h-5 w-5" />
-              Request Quote
+              Request Free Quote
             </Link>
           </Button>
 
@@ -45,7 +45,7 @@ export const CTASection = () => {
           </Button>
 
           <Button asChild size="lg" variant="outline" className="w-full">
-            <a href="tel:+919876543210">
+            <a href="tel:+91 9156679165">
               <Phone className="mr-2 h-5 w-5" />
               Call Expert
             </a>
@@ -59,21 +59,21 @@ export const CTASection = () => {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm">
             <a
-              href="tel:+919876543210"
+              href="tel:+91 9156679165"
               className="text-primary hover:underline font-medium"
             >
-              📞 +91 98765 43210
+              📞 +91 9156679165
             </a>
             <span className="hidden sm:inline text-muted-foreground">|</span>
             <a
-              href="mailto:info@locknkey.com"
+              href="mailto:tirupateebalajispaces@gmail.com"
               className="text-primary hover:underline font-medium"
             >
-              ✉️ info@locknkey.com
+              ✉️ tirupateebalajispaces@gmail.com
             </a>
             <span className="hidden sm:inline text-muted-foreground">|</span>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/9156679165"
               className="text-primary hover:underline font-medium"
               target="_blank"
               rel="noopener noreferrer"

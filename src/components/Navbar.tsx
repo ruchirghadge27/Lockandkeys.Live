@@ -46,12 +46,12 @@ const Navbar = () => {
   ];
 
   const moreItems = [
-    {
-      name: "Pricing",
-      path: "/pricing",
-      icon: DollarSign,
-      description: "View our rates",
-    },
+    // {
+    //   name: "Pricing",
+    //   path: "/pricing",
+    //   icon: DollarSign,
+    //   description: "View our rates",
+    // },
     {
       name: "FAQs",
       path: "/faqs",
@@ -78,7 +78,7 @@ const Navbar = () => {
               🏗️
             </div>
             <div className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-200">
-              LocknKey
+              LockandKey
             </div>
           </Link>
 
@@ -88,11 +88,10 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`text-sm font-medium transition-all duration-200 hover:text-primary relative after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:bg-primary after:transition-all after:duration-200 ${
-                  isActive(item.path)
-                    ? "text-primary after:w-full"
-                    : "text-foreground after:w-0 hover:after:w-full"
-                }`}
+                className={`text-sm font-medium transition-all duration-200 hover:text-primary relative after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:bg-primary after:transition-all after:duration-200 ${isActive(item.path)
+                  ? "text-primary after:w-full"
+                  : "text-foreground after:w-0 hover:after:w-full"
+                  }`}
               >
                 {item.name}
               </Link>
@@ -143,19 +142,19 @@ const Navbar = () => {
           {/* CTA & Mobile Toggle */}
           <div className="flex items-center space-x-3">
             <a
-              href="tel:+919876543210"
+              href="tel:+91 9156679165"
               className="hidden sm:flex items-center space-x-2 text-primary hover:text-primary transition-colors group"
             >
               <Phone className="h-4 w-4 group-hover:animate-pulse" />
               <span className="text-sm font-medium hidden lg:inline">
-                +91 98765 43210
+                +91 9156679165
               </span>
             </a>
             <Button
               asChild
               className="hidden sm:inline-flex shadow-sm hover:shadow-md transition-shadow"
             >
-              <Link to="/contact-us">Get Quote</Link>
+              <Link to="/contact-us">Get Free Quote</Link>
             </Button>
 
             {/* Mobile menu button */}
@@ -183,22 +182,21 @@ const Navbar = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`text-sm font-medium px-3 py-2.5 rounded-lg transition-all duration-200 ${
-                    isActive(item.path)
-                      ? "text-primary bg-primary/10 font-semibold"
-                      : "text-foreground hover:text-primary hover:bg-muted"
-                  }`}
+                  className={`text-sm font-medium px-3 py-2.5 rounded-lg transition-all duration-200 ${isActive(item.path)
+                    ? "text-primary bg-primary/10 font-semibold"
+                    : "text-foreground hover:text-primary hover:bg-muted"
+                    }`}
                 >
                   {item.name}
                 </Link>
               ))}
               <div className="pt-3 border-t border-border mt-2 space-y-2 px-1">
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919156679165"
                   className="flex items-center space-x-2 text-primary px-3 py-2"
                 >
                   <Phone className="h-4 w-4" />
-                  <span className="text-sm font-medium">+91 98765 43210</span>
+                  <span className="text-sm font-medium">+91 9156679165</span>
                 </a>
                 <Button asChild className="w-full">
                   <Link to="/contact-us">Get Free Quote</Link>

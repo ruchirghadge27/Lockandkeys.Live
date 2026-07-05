@@ -8,6 +8,8 @@ import {
   Smartphone,
   Home,
   BadgeCheck,
+  HardHat,
+  DraftingCompass,
 } from "lucide-react";
 
 export const WhyChooseUsPackages = () => {
@@ -27,11 +29,11 @@ export const WhyChooseUsPackages = () => {
       title: "Daily Progress Updates",
       description: "Real-time updates via weekly reports",
     },
-    {
-      icon: Shield,
-      title: "ESCROW Payment Protection",
-      description: "Milestone-based payments held in secure escrow",
-    },
+    // {
+    //   icon: Shield,
+    //   title: "ESCROW Payment Protection",
+    //   description: "Milestone-based payments held in secure escrow",
+    // },
     {
       icon: Award,
       title: "Verified Materials",
@@ -52,6 +54,11 @@ export const WhyChooseUsPackages = () => {
       title: "10-Year Warranty",
       description: "Comprehensive structural warranty coverage",
     },
+    {
+      icon: HardHat,
+      title: "In-House Experts",
+      description: "Experienced architects, engineers, and project managers under one roof",
+    }
   ];
 
   return (
@@ -59,7 +66,7 @@ export const WhyChooseUsPackages = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Why Choose LocknKey?
+            Why Choose LockandKey?
           </h2>
           <p className="text-lg text-muted-foreground">
             We're committed to delivering quality construction with complete

@@ -22,7 +22,7 @@ const StatsSection = () => {
     },
     {
       icon: HardHat,
-      number: "80+",
+      number: "100+",
       label: "Skilled Workers",
       description: "Expert team members"
     }
@@ -42,8 +42,8 @@ const StatsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="text-center p-6 bg-background rounded-lg shadow-card-custom hover:shadow-construction transition-all duration-300 hover:-translate-y-2"
             >
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">

@@ -13,94 +13,129 @@ export const ComparisonTable = () => {
   const features = [
     {
       feature: "Price Range (per sq.ft)",
-      // basic: "₹1500–₹1700",
-      standard: "₹1700–₹2000",
-      premium: "₹2000–₹2400",
+      standard: "₹1500",
+      premium: "₹1900",
       luxury: "₹2400+",
+      royalLuxury: "₹2800+",
     },
     {
-      feature: "Cement & Steel Grade",
-      // basic: "ISI Standard",
-      standard: "Premium ISI",
-      premium: "High Grade",
-      luxury: "Ultra High Grade",
+      feature: "Steel",
+      standard: "Kalika / Kamdhenu",
+      premium: "Kalika / equivalent",
+      luxury: "JSW",
+      royalLuxury: "TATA Steel / JSW",
+    },
+    {
+      feature: "Cement",
+      standard: "Dalmia / ACC",
+      premium: "Birla / Ambuja",
+      luxury: "Utra Tech",
+      royalLuxury: "Utra Tech",
     },
     {
       feature: "Brick/Block Type",
-      // basic: "Red Brick",
       standard: "AAC/Red Brick",
-      premium: "AAC Blocks",
-      luxury: "Premium AAC",
+      premium: "Red Brick",
+      luxury: "Premium Red Brick",
+      royalLuxury: "Premium Red Brick",
     },
     {
       feature: "Flooring Type",
-      // basic: "Ceramic Tiles",
       standard: "Vitrified Tiles",
-      premium: "Premium Vitrified",
+      premium: "Digital Vitrified",
       luxury: "Italian Marble/Granite",
+      royalLuxury: "Italian Marble/Granite",
     },
     {
       feature: "Bathroom Fittings",
-      // basic: "Standard",
-      standard: "Mid-Range Brand",
-      premium: "Premium Brand",
-      luxury: "Luxury Brand",
+      standard: "Acer / Moonwave",
+      premium: "Cera / Hindware [Basic]",
+      luxury: "Jaquar or equivalent",
+      royalLuxury: "Kohler or equivalent",
     },
     {
-      feature: "Doors & Windows",
-      // basic: "Flush Doors/Aluminum",
-      standard: "Teak Wood Frame",
-      premium: "Premium Wood/UPVC",
-      luxury: "Designer Wood/UPVC",
+      feature: "Doors",
+      standard: "Flush door & salwood frame",
+      premium: "Teak door & frame",
+      luxury: "Teak door & frame",
+      royalLuxury: "Solid Teak / Custom Design",
+    },
+    {
+      feature: "Windows",
+      standard: "Aluminium",
+      premium: "Premium Aluminium / UPVC",
+      luxury: "UPVC",
+      royalLuxury: "UPVC Premium",
     },
     {
       feature: "Electrical Wiring",
-      // basic: "ISI Standard",
-      standard: "Branded (Finolex)",
-      premium: "Premium (Polycab)",
-      luxury: "Premium + Smart Ready",
+      standard: "Finolex / Polycab",
+      premium: "Polycab",
+      luxury: "Premium Polycab / Equivalent",
+      royalLuxury: "Premium + Smart Ready",
+    },
+    {
+      feature: "Electrical Switches",
+      standard: "Anchor Penta",
+      premium: "Anchor Roma / Gold Medal",
+      luxury: "Legrand",
+      royalLuxury: "Schneider Electric",
     },
     {
       feature: "Plumbing Materials",
-      // basic: "CPVC Standard",
-      standard: "CPVC/PVC Branded",
-      premium: "Premium CPVC",
-      luxury: "Premium + Fixtures",
+      standard: "Prince pipes",
+      premium: "Prince pipes",
+      luxury: "Prince pipes",
+      royalLuxury: "Premium Astral pipes",
     },
     {
       feature: "Waterproofing",
-      // basic: true,
-      standard: true,
-      premium: true,
-      luxury: true,
+      standard: false,
+      premium: "Standard",
+      luxury: "Brick Bat",
+      royalLuxury: "Advanced waterproofing",
     },
     {
-      feature: "Paint & Wall Finish",
-      // basic: "Acrylic Emulsion",
-      standard: "Premium Emulsion",
-      premium: "Luxury Emulsion",
-      luxury: "Designer Finish",
+      feature: "Anti-Termite Treatment",
+      standard: false,
+      premium: true,
+      luxury: true,
+      royalLuxury: true,
+    },
+    {
+      feature: "Interior Painting",
+      standard: "Tractor Emulsion (Asian Paints)",
+      premium: "Tractor Shyne Emulsion",
+      luxury: "Apcolite Premium Emulsion",
+      royalLuxury: "Royale Luxury Emulsion",
+    },
+    {
+      feature: "Exterior Painting",
+      standard: "Ace Exterior Emulsion",
+      premium: "Ace Exterior Emulsion",
+      luxury: "Apex Exterior Emulsion",
+      royalLuxury: "Apex Ultima Exterior Emulsion",
     },
     {
       feature: "Kitchen Platform",
-      // basic: "Granite Basic",
-      standard: "Granite Premium",
-      premium: "Quartz/Granite",
-      luxury: "Italian Marble/Quartz",
+      standard: "Granite",
+      premium: "Granite Premium",
+      luxury: "Quartz/Granite",
+      royalLuxury: "Italian Marble/Quartz",
     },
     {
       feature: "Ceiling Height",
-      // basic: "10 ft",
       standard: "10 ft",
       premium: "11 ft",
       luxury: "12 ft",
+      royalLuxury: "12 ft",
     },
     {
       feature: "Structural Warranty",
-      // basic: "5 Years",
       standard: "7 Years",
       premium: "10 Years",
-      luxury: "15 Years",
+      luxury: "12 Years",
+      royalLuxury: "15 Years",
     },
   ];
 
@@ -146,6 +181,9 @@ export const ComparisonTable = () => {
                 <TableHead className="text-center font-bold text-foreground">
                   <Badge variant="outline">Luxury</Badge>
                 </TableHead>
+                <TableHead className="text-center font-bold text-foreground">
+                  <Badge variant="outline">Royal Luxury</Badge>
+                </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -163,6 +201,9 @@ export const ComparisonTable = () => {
                   </TableCell>
                   <TableCell className="text-center">
                     {renderCell(row.luxury)}
+                  </TableCell>
+                  <TableCell className="text-center bg-amber-500/5">
+                    {renderCell(row.royalLuxury)}
                   </TableCell>
                 </TableRow>
               ))}

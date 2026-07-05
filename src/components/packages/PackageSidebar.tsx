@@ -153,8 +153,8 @@ export const PackageSidebar = ({
                   Project Timeline Breakdown
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Typical construction timeline for this package (may vary based
-                  on project size)
+                  Typical construction timeline for a G+1 house <br />
+                  (may vary based on project size and site conditions).
                 </p>
                 <div className="space-y-3">
                   {packageData.detailedSpecs.timeline.map((phase, idx) => (
@@ -175,6 +175,12 @@ export const PackageSidebar = ({
                       <Badge variant="outline">{phase.duration}</Badge>
                     </div>
                   ))}
+                  {packageData.detailedSpecs.totalDuration && (
+                    <div className="flex items-center justify-between p-4 rounded-lg border-2 border-primary/20 bg-primary/5 mt-2">
+                      <span className="font-semibold text-foreground">Total Estimated Duration</span>
+                      <Badge className="bg-primary text-primary-foreground hover:bg-primary/90">{packageData.detailedSpecs.totalDuration}</Badge>
+                    </div>
+                  )}
                 </div>
               </div>
 

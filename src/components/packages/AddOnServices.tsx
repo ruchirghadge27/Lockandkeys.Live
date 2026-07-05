@@ -14,6 +14,7 @@ import {
   Droplet,
   Sun,
   Lightbulb,
+  Compass,
   TreePine,
 } from "lucide-react";
 
@@ -37,42 +38,43 @@ export const AddOnServices = () => {
       description: "POP/Gypsum false ceiling with designer lighting",
       price: "₹100-150/sq.ft",
     },
-    {
-      icon: Warehouse,
-      name: "Wardrobes",
-      description: "Built-in wardrobes with modern fittings",
-      price: "Starting ₹60,000",
-    },
-    {
-      icon: Fence,
-      name: "Compound Wall",
-      description: "Perimeter wall with gate and security features",
-      price: "₹500-800/sq.ft",
-    },
-    {
-      icon: Droplet,
-      name: "Borewell",
-      description: "Deep borewell drilling with pump installation",
-      price: "Starting ₹1,50,000",
-    },
+    // {
+    //   icon: Warehouse,
+    //   name: "Wardrobes",
+    //   description: "Built-in wardrobes with modern fittings",
+    //   price: "Starting ₹60,000",
+    // },
+    // {
+    //   icon: Fence,
+    //   name: "Compound Wall",
+    //   description: "Perimeter wall with gate and security features",
+    //   price: "₹500-800/sq.ft",
+    // },
+
     {
       icon: Sun,
       name: "Solar Installation",
       description: "Solar power system with net metering",
       price: "₹50,000-5,00,000",
     },
-    {
-      icon: Lightbulb,
-      name: "Smart Home",
-      description: "Home automation with app-based controls",
-      price: "Starting ₹40,000",
-    },
+    // {
+    //   icon: Lightbulb,
+    //   name: "Smart Home",
+    //   description: "Home automation with app-based controls",
+    //   price: "Starting ₹40,000",
+    // },
     {
       icon: TreePine,
       name: "Landscaping",
       description: "Garden design with plants and outdoor features",
-      price: "Starting ₹2,00,000",
+      price: "Starting ₹1,00,000",
     },
+    {
+      icon: Compass,
+      name: "Vastu Consultation",
+      description: "Expert Vastu consultation for residential and commercial projects",
+      price: "Starting ₹5,000",
+    }
   ];
 
   return (

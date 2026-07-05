@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Check, ArrowRight, Star, Zap, Crown, Gem } from "lucide-react";
+import { Check, ArrowRight, Star, Zap, Crown, Gem, Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const packages = [
@@ -32,7 +32,6 @@ const packages = [
     iconColor: "text-primary",
     badgeColor: "bg-primary text-primary-foreground",
     headerBg: "bg-primary/5",
-    recommended: true,
     inclusions: [
       "Premium ISI Cement & Steel",
       "AAC/Red Brick Masonry",
@@ -45,12 +44,13 @@ const packages = [
     id: "premium",
     icon: Crown,
     name: "Premium",
-    priceRange: "₹2,000",
+    priceRange: "₹1,900",
     tagline: "Superior Quality & Aesthetics",
     accentColor: "border-amber-400",
     iconColor: "text-amber-500",
     badgeColor: "bg-amber-100 text-amber-800",
     headerBg: "bg-amber-50/50",
+    recommended: true,
     inclusions: [
       "High-Grade Cement & Steel",
       "Premium AAC Block Masonry",
@@ -63,7 +63,7 @@ const packages = [
     id: "luxury",
     icon: Gem,
     name: "Luxury",
-    priceRange: "₹2,600+",
+    priceRange: "₹2,400+",
     tagline: "Ultimate Premium Experience",
     accentColor: "border-purple-400",
     iconColor: "text-purple-500",
@@ -74,6 +74,24 @@ const packages = [
       "Premium AAC Block System",
       "Italian Marble/Granite Flooring",
       "Luxury Designer Fittings",
+    ],
+    warranty: "15-Year Structural",
+  },
+  {
+    id: "royalLuxury",
+    icon: Sparkles,
+    name: "Royal Luxury",
+    priceRange: "₹2,850+",
+    tagline: "The Pinnacle of Opulence & Craftsmanship",
+    accentColor: "border-amber-500 ring-2 ring-amber-400/30",
+    iconColor: "text-amber-600",
+    badgeColor: "bg-amber-100 text-amber-900",
+    headerBg: "bg-gradient-to-r from-amber-50/80 to-yellow-50/80",
+    inclusions: [
+      "Ultratech Premium Cement & Tata Steel",
+      "Italian Marble / Exotic Stone Flooring",
+      "Kohler / Grohe / TOTO Fittings",
+      "Smart Home Ready Wiring",
     ],
     warranty: "15-Year Structural",
   },
@@ -100,7 +118,7 @@ export const PackagesPreview = () => {
         </div>
 
         {/* Package Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
           {packages.map((pkg) => {
             const Icon = pkg.icon;
             return (
